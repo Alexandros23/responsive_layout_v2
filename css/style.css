@@ -86,9 +86,7 @@ ul {
   headers
 ==================================== */
 
-main-header {
-  text-align: center;
-}
+
 
 .name {
   color: #093a58;
@@ -182,6 +180,35 @@ a:hover
   padding: 20px 0;
 }
 
+.contact-details {
+    margin-bottom:80px;
+}
+.contact-details li{
+    padding:10px;
+}
+
+.footer-nav {
+     float:right;
+     margin: 14px 0;
+     
+  }
+
+
+    .footer-name {
+    float: left;
+    font-size:0.8em; 
+    }
+   
+    .footer-nav li {
+      display:inline-block;
+      font-size:0.8em;  
+  }
+
+
+
+   .footer-nav  {
+       font-size:0.7em;
+   }
 /* ================================= 
   clearfix
 ==================================== */
@@ -191,6 +218,10 @@ a:hover
 		clear: both;
 		display:table;
 	}
+
+
+
+
 
 /* ================================= 
   Media Queries
@@ -240,16 +271,27 @@ a:hover
   .profile-pic {
     width: 200px;
   }
-
+    .footer-name {
+        float: left;
+    }
+  
 
   .footer-nav {
     margin-top: 20px;
-    display:inline-block
+   display:inline-block;
+   
   }
 
   .footer-nav a {
     margin-left: 20px;
+    
   }
+
+  .footer-nav li {
+      display:inline-block;
+      font-size:1em;
+  }
+
 
   .portfolio-photos li:nth-child(2n+1) {
     clear: left;
@@ -263,70 +305,79 @@ a:hover
 
 @media (min-width: 1025px) {
 
-  .container {
-    width: 80%;
-  }
+    .container {
+        width: 80%;
+    }
 
-  .container2 {
-    width: 80%;
-  }
+    .container2 {
+        width: 80%;
+    }
 
-  .portfolio-photos li {
-    width: 31.327%;
-  }
+    .portfolio-photos li {
+        width: 31.327%;
+    }
 
-  .name {
-    float: left;
+    .name {
+        float: left;
+    }
 
-  }
-
-  .main-nav {
-    float: right;
-    margin-top: 10px;
-  }
+    .main-nav {
+        float: right;
+        margin-top: 10px;
+    }
 
 
-  .introduction {
-    font-size: 1.6em;
-  }
+    .introduction {
+        font-size: 1.6em;
+    }
 
-  .profile-pic {
-  }
+    .profile-pic {
+    }
 
-  .footer-name, 
-  .footer-nav {
-    font-size: 1.2em;
+    footer {
+        margin-top: 80px;
+    }
+
+    .footer-name
+    {
+        font-size: 1.2em;
+    }
+
+
+
+    .footer-name {
+        float: left;
+    }
+
+    .footer-nav {
+        margin-top: 25px;
+        float: right;
+    }
+
+   .footer-nav li {
+            display: inline-block; 
+            font-size:1.2em;
+   }
     
-  }
+   .footer-nav li  {
+        
+   }
 
-  .footer-name {
-      float:left;
-  }
+    .portfolio-photos li:nth-child(2n+1) {
+        clear: none;
+    }
 
-  .footer-nav {
-    margin-top: 25px;
-    float:right;
-  }
+    .gallery li:nth-child(3n+1) {
+        clear: left;
+    }
 
-  .footer-nav li {
-      display:inline-block;
-  }
-
-  .portfolio-photos li:nth-child(2n+1) {
-    clear: none;
-  }
-
-   .gallery li:nth-child(3n+1) {
-    clear: left;
-  }
-
-/* ================================= 
+    /* ================================= 
   clearfix
 ==================================== */
 
-	.clearfix::after {
-		content: " ";
-		clear: both;
-		display:table;
-	}
-
+    .clearfix::after {
+        content: " ";
+        clear: both;
+        display: table;
+    }
+}
