@@ -187,28 +187,27 @@ a:hover
     padding:10px;
 }
 
-.footer-nav {
-     float:right;
-     margin: 14px 0;
-     
-  }
-
-
-    .footer-name {
-    float: left;
-    font-size:0.8em; 
+.footer-name {
+        float: left;
+        display:inline-block;
     }
-   
-    .footer-nav li {
-      display:inline-block;
-      font-size:0.8em;  
+
+.m-foot a{
+  float: right;	
+  font-size:0.8em;
+  display:inline-block;
   }
 
+.m-foot a {
+    display:inline-block;
+}
 
 
-   .footer-nav  {
-       font-size:0.7em;
-   }
+.footer-nav{
+    display:none;
+}
+
+   
 /* ================================= 
   clearfix
 ==================================== */
@@ -271,19 +270,21 @@ a:hover
   .profile-pic {
     width: 200px;
   }
-    .footer-name {
-        float: left;
-    }
-  
+    
+  .m-foot {
+      display:none;
+      
+  }
 
   .footer-nav {
     margin-top: 20px;
    display:inline-block;
-   
+   float:right;
   }
 
-  .footer-nav a {
+ .footer-nav a {
     margin-left: 20px;
+    margin-top:0px;
     
   }
 
@@ -356,12 +357,10 @@ a:hover
 
    .footer-nav li {
             display: inline-block; 
-            font-size:1.2em;
+            font-size:1em;
    }
     
-   .footer-nav li  {
-        
-   }
+   
 
     .portfolio-photos li:nth-child(2n+1) {
         clear: none;
